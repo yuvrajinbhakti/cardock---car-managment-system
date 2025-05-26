@@ -1,8 +1,11 @@
 package models
 
 import (
+	"errors"
+	"strconv"
 	"time"
-	 "github.com/google/uuid",
+
+	"github.com/google/uuid"
 )
 
 type Car struct {
@@ -11,9 +14,9 @@ type Car struct {
 	Year string `json:"year"`
 	Brand string `json:"brand"`
 	FuelType string `json:"fuel_type"`
-	Engine Engine `json:"engine`
+	Engine Engine `json:"engine"`
 	Price float64 `json:"price"`
-	createdAt time.Time `json:"created_at"`
+	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
